@@ -116,7 +116,20 @@ function bindTouch(){
 // root.playList.renderList(songList);
 // controlmanager = new root.controlManager(data.length);
 // $scope.trigger("playPause",0);
+
+function enterFullScreen() {
+    var de = document.documentElement;
+    if (de.requestFullscreen) {
+        de.requestFullscreen();
+    } else if (de.mozRequestFullScreen) {
+        de.mozRequestFullScreen();
+    } else if (de.webkitRequestFullScreen) {
+        de.webkitRequestFullScreen();
+    }
+}
+
 function init(){
+    enterFullScreen();
     var url = "https://api.hibai.cn/api/index/index";
     $.ajax({
         type: "POST",
