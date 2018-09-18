@@ -127,9 +127,7 @@ function enterFullScreen() {
         de.webkitRequestFullScreen();
     }
 }
-
 function init(){
-    enterFullScreen();
     var url = "https://api.hibai.cn/api/index/index";
     $.ajax({
         type: "POST",
