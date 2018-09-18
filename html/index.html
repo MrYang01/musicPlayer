@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="search">
+            <div class="search-box">
+                <input type="text" placeholder="请输入歌曲名搜索" id="search">
+            </div>
+            <div class="search-icon"></div>
+            <div class="search-list">
+                <ul>
+                    <li><a href="">空白格<span>&nbsp; - &nbsp;蔡健雅</span></a></li>
+                    <li><a href="">空白格<span>&nbsp; - &nbsp;蔡健雅</span></a></li>
+                    <li><a href="">空白格<span>&nbsp; - &nbsp;蔡健雅</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="song-img">
+            <div class="img-wrapper">
+                <img src="https://api.hibai.cn/music/Music/Music?id=25714352&type=pic" alt="">
+            </div>
+        </div>
+        <div class="song-info">
+            <div class="song-name">空白格</div>
+            <div class="singer-name">杨宗纬</div>
+            <!-- <div class="album-name">空白格</div> -->
+        </div>
+         <div class="pro">
+            <div class="cur-time">00:00</div>
+            <div class="pro-wrapper">
+                <div class="pro-bottom"></div>
+                <div class="pro-top">
+                    <div class="slider-point"></div>
+                </div>
+            </div>
+            <div class="all-time">04:46</div>
+        </div>
+        <div class="control">
+            <div class="btn-wrapper like-btn"></div>
+            <div class="btn-wrapper prev-btn"></div>
+            <div class="btn-wrapper play-btn"></div>
+            <div class="btn-wrapper next-btn"></div>
+            <div class="btn-wrapper list-btn"></div>
+        </div>
+    </div>
+    <!-- 
+
+    <div class="list-wrapper">
+        <div class="cover"></div>
+        <div class="list-content">
+            <div class="play-header">播放列表</div>
+            <ul class="play-list"></ul>
+        </div> 
+    </div>-->
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/gaussBlur.js"></script>
+    <script src="../js/render.js"></script>
+    <script src="../js/controlmanager.js"></script>
+    <script src="../js/audioControl.js"></script>
+    <script src="../js/progress.js"></script>
+    <script src="../js/playList.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
